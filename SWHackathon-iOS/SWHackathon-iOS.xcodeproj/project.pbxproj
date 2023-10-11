@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B19F9DD2AD62D4100115EC5 /* SWHackathon_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19F9DC2AD62D4100115EC5 /* SWHackathon_iOSApp.swift */; };
+		4B19F9DF2AD62D4100115EC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19F9DE2AD62D4100115EC5 /* ContentView.swift */; };
+		4B19F9E12AD62D4200115EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B19F9E02AD62D4200115EC5 /* Assets.xcassets */; };
+		4B19F9E42AD62D4200115EC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B19F9E32AD62D4200115EC5 /* Preview Assets.xcassets */; };
+		4B19F9EF2AD62DAA00115EC5 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B19F9EE2AD62DAA00115EC5 /* CombineMoya */; };
+		4B19F9F12AD62DAA00115EC5 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B19F9F02AD62DAA00115EC5 /* Moya */; };
+		4B19F9F32AD62DAA00115EC5 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B19F9F22AD62DAA00115EC5 /* ReactiveMoya */; };
+		4B19F9F52AD62DAA00115EC5 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B19F9F42AD62DAA00115EC5 /* RxMoya */; };
+		4B19F9F82AD62DBB00115EC5 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 4B19F9F72AD62DBB00115EC5 /* SwiftKeychainWrapper */; };
+		4B19FA0B2AD62EC700115EC5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19FA0A2AD62EC700115EC5 /* LoginView.swift */; };
+		4B19FA0F2AD62EDE00115EC5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19FA0E2AD62EDE00115EC5 /* LoginViewModel.swift */; };
+		4B19FA162AD62FF500115EC5 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19FA152AD62FF500115EC5 /* AuthAPI.swift */; };
+		4B19FA182AD6306B00115EC5 /* UrlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19FA172AD6306B00115EC5 /* UrlManager.swift */; };
+		4B19FA1A2AD6319B00115EC5 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19FA192AD6319B00115EC5 /* MoyaLoggingPlugin.swift */; };
+		4B19FA1D2AD631DA00115EC5 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19FA1C2AD631DA00115EC5 /* TokenStorage.swift */; };
+		4B19FA202AD6372300115EC5 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19FA1F2AD6372300115EC5 /* AuthError.swift */; };
+		4B19FA232AD637AC00115EC5 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19FA222AD637AC00115EC5 /* LoginUseCase.swift */; };
+		4B19FA262AD638FF00115EC5 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19FA252AD638FF00115EC5 /* AuthRepository.swift */; };
+		4B19FA282AD6587000115EC5 /* TokenDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19FA272AD6587000115EC5 /* TokenDTO.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B19F9D92AD62D4100115EC5 /* SWHackathon-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SWHackathon-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B19F9DC2AD62D4100115EC5 /* SWHackathon_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWHackathon_iOSApp.swift; sourceTree = "<group>"; };
+		4B19F9DE2AD62D4100115EC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B19F9E02AD62D4200115EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B19F9E32AD62D4200115EC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B19FA0A2AD62EC700115EC5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4B19FA0E2AD62EDE00115EC5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4B19FA152AD62FF500115EC5 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		4B19FA172AD6306B00115EC5 /* UrlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlManager.swift; sourceTree = "<group>"; };
+		4B19FA192AD6319B00115EC5 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
+		4B19FA1C2AD631DA00115EC5 /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
+		4B19FA1F2AD6372300115EC5 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		4B19FA222AD637AC00115EC5 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		4B19FA252AD638FF00115EC5 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		4B19FA272AD6587000115EC5 /* TokenDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDTO.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B19F9D62AD62D4100115EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B19F9F12AD62DAA00115EC5 /* Moya in Frameworks */,
+				4B19F9EF2AD62DAA00115EC5 /* CombineMoya in Frameworks */,
+				4B19F9F82AD62DBB00115EC5 /* SwiftKeychainWrapper in Frameworks */,
+				4B19F9F52AD62DAA00115EC5 /* RxMoya in Frameworks */,
+				4B19F9F32AD62DAA00115EC5 /* ReactiveMoya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B19F9D02AD62D4100115EC5 = {
+			isa = PBXGroup;
+			children = (
+				4B19F9DB2AD62D4100115EC5 /* SWHackathon-iOS */,
+				4B19F9DA2AD62D4100115EC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B19F9DA2AD62D4100115EC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B19F9D92AD62D4100115EC5 /* SWHackathon-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B19F9DB2AD62D4100115EC5 /* SWHackathon-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA122AD62FB000115EC5 /* DesignSystem */,
+				4B19FA052AD62E9100115EC5 /* Util */,
+				4B19F9EC2AD62D7A00115EC5 /* Service */,
+				4B19F9EA2AD62D4D00115EC5 /* App */,
+				4B19F9E22AD62D4200115EC5 /* Preview Content */,
+			);
+			path = "SWHackathon-iOS";
+			sourceTree = "<group>";
+		};
+		4B19F9E22AD62D4200115EC5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B19F9E32AD62D4200115EC5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B19F9EA2AD62D4D00115EC5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4B19F9FA2AD62DEA00115EC5 /* Resources */,
+				4B19F9F92AD62DCF00115EC5 /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4B19F9EB2AD62D5B00115EC5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4B19F9DC2AD62D4100115EC5 /* SWHackathon_iOSApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4B19F9EC2AD62D7A00115EC5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4B19F9FE2AD62E4700115EC5 /* Network */,
+				4B19F9FD2AD62E3C00115EC5 /* Domain */,
+				4B19F9FC2AD62E3700115EC5 /* Data */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4B19F9F92AD62DCF00115EC5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B19F9EB2AD62D5B00115EC5 /* Application */,
+				4B19F9FB2AD62E0F00115EC5 /* Scene */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4B19F9FA2AD62DEA00115EC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B19F9E02AD62D4200115EC5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4B19F9FB2AD62E0F00115EC5 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA092AD62EBC00115EC5 /* Auth */,
+				4B19F9DE2AD62D4100115EC5 /* ContentView.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		4B19F9FC2AD62E3700115EC5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4B19F9FF2AD62E5400115EC5 /* AuthData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4B19F9FD2AD62E3C00115EC5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA012AD62E6800115EC5 /* AuthDomain */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4B19F9FE2AD62E4700115EC5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA1B2AD631AF00115EC5 /* Auth */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4B19F9FF2AD62E5400115EC5 /* AuthData */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA242AD638F400115EC5 /* Repository */,
+				4B19FA002AD62E5E00115EC5 /* DTO */,
+			);
+			path = AuthData;
+			sourceTree = "<group>";
+		};
+		4B19FA002AD62E5E00115EC5 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA272AD6587000115EC5 /* TokenDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		4B19FA012AD62E6800115EC5 /* AuthDomain */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA032AD62E7500115EC5 /* Entity */,
+				4B19FA022AD62E7000115EC5 /* UseCase */,
+			);
+			path = AuthDomain;
+			sourceTree = "<group>";
+		};
+		4B19FA022AD62E7000115EC5 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA222AD637AC00115EC5 /* LoginUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		4B19FA032AD62E7500115EC5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4B19FA042AD62E8700115EC5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA152AD62FF500115EC5 /* AuthAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4B19FA052AD62E9100115EC5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA082AD62EA500115EC5 /* Network */,
+				4B19FA072AD62EA100115EC5 /* Enum */,
+				4B19FA062AD62E9900115EC5 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4B19FA062AD62E9900115EC5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B19FA072AD62EA100115EC5 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA172AD6306B00115EC5 /* UrlManager.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		4B19FA082AD62EA500115EC5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA112AD62F6100115EC5 /* Storage */,
+				4B19FA102AD62F5B00115EC5 /* Logger */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4B19FA092AD62EBC00115EC5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA0A2AD62EC700115EC5 /* LoginView.swift */,
+				4B19FA0E2AD62EDE00115EC5 /* LoginViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		4B19FA102AD62F5B00115EC5 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA192AD6319B00115EC5 /* MoyaLoggingPlugin.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		4B19FA112AD62F6100115EC5 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA1C2AD631DA00115EC5 /* TokenStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		4B19FA122AD62FB000115EC5 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA292AD6674600115EC5 /* Object */,
+				4B19FA132AD62FD600115EC5 /* Font */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		4B19FA132AD62FD600115EC5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		4B19FA1B2AD631AF00115EC5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA1E2AD6371A00115EC5 /* Error */,
+				4B19FA042AD62E8700115EC5 /* API */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		4B19FA1E2AD6371A00115EC5 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA1F2AD6372300115EC5 /* AuthError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		4B19FA242AD638F400115EC5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA252AD638FF00115EC5 /* AuthRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4B19FA292AD6674600115EC5 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				4B19FA2A2AD6675000115EC5 /* TextField */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		4B19FA2A2AD6675000115EC5 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B19F9D82AD62D4100115EC5 /* SWHackathon-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B19F9E72AD62D4200115EC5 /* Build configuration list for PBXNativeTarget "SWHackathon-iOS" */;
+			buildPhases = (
+				4B19F9D52AD62D4100115EC5 /* Sources */,
+				4B19F9D62AD62D4100115EC5 /* Frameworks */,
+				4B19F9D72AD62D4100115EC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SWHackathon-iOS";
+			packageProductDependencies = (
+				4B19F9EE2AD62DAA00115EC5 /* CombineMoya */,
+				4B19F9F02AD62DAA00115EC5 /* Moya */,
+				4B19F9F22AD62DAA00115EC5 /* ReactiveMoya */,
+				4B19F9F42AD62DAA00115EC5 /* RxMoya */,
+				4B19F9F72AD62DBB00115EC5 /* SwiftKeychainWrapper */,
+			);
+			productName = "SWHackathon-iOS";
+			productReference = 4B19F9D92AD62D4100115EC5 /* SWHackathon-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B19F9D12AD62D4100115EC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					4B19F9D82AD62D4100115EC5 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 4B19F9D42AD62D4100115EC5 /* Build configuration list for PBXProject "SWHackathon-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B19F9D02AD62D4100115EC5;
+			packageReferences = (
+				4B19F9ED2AD62DAA00115EC5 /* XCRemoteSwiftPackageReference "Moya" */,
+				4B19F9F62AD62DBB00115EC5 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
+			productRefGroup = 4B19F9DA2AD62D4100115EC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B19F9D82AD62D4100115EC5 /* SWHackathon-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B19F9D72AD62D4100115EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B19F9E42AD62D4200115EC5 /* Preview Assets.xcassets in Resources */,
+				4B19F9E12AD62D4200115EC5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B19F9D52AD62D4100115EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B19FA0F2AD62EDE00115EC5 /* LoginViewModel.swift in Sources */,
+				4B19FA282AD6587000115EC5 /* TokenDTO.swift in Sources */,
+				4B19FA262AD638FF00115EC5 /* AuthRepository.swift in Sources */,
+				4B19FA162AD62FF500115EC5 /* AuthAPI.swift in Sources */,
+				4B19FA0B2AD62EC700115EC5 /* LoginView.swift in Sources */,
+				4B19FA1D2AD631DA00115EC5 /* TokenStorage.swift in Sources */,
+				4B19FA182AD6306B00115EC5 /* UrlManager.swift in Sources */,
+				4B19F9DF2AD62D4100115EC5 /* ContentView.swift in Sources */,
+				4B19FA202AD6372300115EC5 /* AuthError.swift in Sources */,
+				4B19FA1A2AD6319B00115EC5 /* MoyaLoggingPlugin.swift in Sources */,
+				4B19F9DD2AD62D4100115EC5 /* SWHackathon_iOSApp.swift in Sources */,
+				4B19FA232AD637AC00115EC5 /* LoginUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B19F9E52AD62D4200115EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B19F9E62AD62D4200115EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B19F9E82AD62D4200115EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SWHackathon-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 629Q9H7922;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SWHackathon.SWHackathon-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B19F9E92AD62D4200115EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SWHackathon-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 629Q9H7922;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SWHackathon.SWHackathon-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B19F9D42AD62D4100115EC5 /* Build configuration list for PBXProject "SWHackathon-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B19F9E52AD62D4200115EC5 /* Debug */,
+				4B19F9E62AD62D4200115EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B19F9E72AD62D4200115EC5 /* Build configuration list for PBXNativeTarget "SWHackathon-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B19F9E82AD62D4200115EC5 /* Debug */,
+				4B19F9E92AD62D4200115EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B19F9ED2AD62DAA00115EC5 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		4B19F9F62AD62DBB00115EC5 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B19F9EE2AD62DAA00115EC5 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B19F9ED2AD62DAA00115EC5 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		4B19F9F02AD62DAA00115EC5 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B19F9ED2AD62DAA00115EC5 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		4B19F9F22AD62DAA00115EC5 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B19F9ED2AD62DAA00115EC5 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		4B19F9F42AD62DAA00115EC5 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B19F9ED2AD62DAA00115EC5 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		4B19F9F72AD62DBB00115EC5 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B19F9F62AD62DBB00115EC5 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4B19F9D12AD62D4100115EC5 /* Project object */;
+}
