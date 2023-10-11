@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4B19F9DD2AD62D4100115EC5 /* SWHackathon_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19F9DC2AD62D4100115EC5 /* SWHackathon_iOSApp.swift */; };
-		4B19F9DF2AD62D4100115EC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19F9DE2AD62D4100115EC5 /* ContentView.swift */; };
 		4B19F9E12AD62D4200115EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B19F9E02AD62D4200115EC5 /* Assets.xcassets */; };
 		4B19F9E42AD62D4200115EC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B19F9E32AD62D4200115EC5 /* Preview Assets.xcassets */; };
 		4B19F9EF2AD62DAA00115EC5 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 4B19F9EE2AD62DAA00115EC5 /* CombineMoya */; };
@@ -31,7 +30,6 @@
 /* Begin PBXFileReference section */
 		4B19F9D92AD62D4100115EC5 /* SWHackathon-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SWHackathon-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B19F9DC2AD62D4100115EC5 /* SWHackathon_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWHackathon_iOSApp.swift; sourceTree = "<group>"; };
-		4B19F9DE2AD62D4100115EC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B19F9E02AD62D4200115EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B19F9E32AD62D4200115EC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B19FA0A2AD62EC700115EC5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				4B19FA092AD62EBC00115EC5 /* Auth */,
-				4B19F9DE2AD62D4100115EC5 /* ContentView.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -427,7 +424,6 @@
 				4B19FA0B2AD62EC700115EC5 /* LoginView.swift in Sources */,
 				4B19FA1D2AD631DA00115EC5 /* TokenStorage.swift in Sources */,
 				4B19FA182AD6306B00115EC5 /* UrlManager.swift in Sources */,
-				4B19F9DF2AD62D4100115EC5 /* ContentView.swift in Sources */,
 				4B19FA202AD6372300115EC5 /* AuthError.swift in Sources */,
 				4B19FA1A2AD6319B00115EC5 /* MoyaLoggingPlugin.swift in Sources */,
 				4B19F9DD2AD62D4100115EC5 /* SWHackathon_iOSApp.swift in Sources */,
